@@ -1,4 +1,14 @@
 item.ruby.name=Ruby
 item.obsidian_ingot.name=Obsidian Ingot
+item.ruby_sword.name=Ruby Sword
+item.ruby_spade.name=Ruby Shovel
+item.ruby_axe.name=Ruby Axe
+item.ruby_pickaxe.name=Ruby Pickaxe
 
 tile.ruby_block.name=Block of Ruby
+tile.ruby_ore_block.name=Ruby Ore
+
+item.ruby_helmet.name=Ruby Helmet
+item.ruby_chestplate.name=Ruby Chestplate
+item.ruby_leggings.name=Ruby Leggings
+item.ruby_boots.name=Ruby Boots

@@ -1,12 +1,15 @@
 package com.demerzel.helloworld;
 
+import com.demerzel.helloworld.init.ModRecipes;
 import com.demerzel.helloworld.proxy.CommonProxy;
 import com.demerzel.helloworld.util.Reference;
+import com.demerzel.helloworld.world.ModWorldGen;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.NAME, version = Reference.VERSION)
 public class HelloWorld {
@@ -18,12 +21,12 @@ public class HelloWorld {
 
     @Mod.EventHandler
     public static void PreInit(FMLPreInitializationEvent event) {
-
+        GameRegistry.registerWorldGenerator(new ModWorldGen(), 3);
     }
 
     @Mod.EventHandler
     public static void init(FMLInitializationEvent event) {
-
+        ModRecipes.init();
     }
 
     @Mod.EventHandler

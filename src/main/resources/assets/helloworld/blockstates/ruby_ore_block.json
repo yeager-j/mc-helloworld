@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "normal": { "model": "helloworld:ruby_ore_block" }
+  }
+}
